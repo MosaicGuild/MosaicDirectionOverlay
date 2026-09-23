@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "mosaicdirectionoverlay",
+  "version": "${version}",
+  "name": "MosaicDirectionOverlay",
+  "description": "Direction/coordinate overlay proving Mosaic's register-use-unregister lifecycle.",
+  "authors": [
+    "Sky"
+  ],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "mosaic": [
+      "org.mosaicmc.mosaicdirectionoverlay.client.DirectionOverlayExtension"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "mosaic": "*",
+    "minecraft": "${minecraft_version}",
+    "java": ">=25"
+  }
+}
